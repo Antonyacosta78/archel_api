@@ -1,7 +1,7 @@
 <?php  
 /* PHP Class for manage responses and requests
  * AUTHOR: Mickael Souza
- * LAST EDIT: 2018-11-26
+ * LAST EDIT: 2018-05-29
 */
 namespace App;
 
@@ -32,10 +32,6 @@ class Http
 
 	public static function jsonResponseData($success, $message = null, $data = null)
 	{
-		// if($data !== null) {
-		// 	$data = json_encode($data);
-		// }
-
 		$response = array(
 	        "success"=>$success,
 	        "message"=>$message,
